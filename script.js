@@ -17,7 +17,7 @@ function compute_compound()
     var rate = parseFloat(document.getElementById("rate").value);
     var years = parseFloat(document.getElementById("years").value);
     var amount = (principal) * ((1+rate) ** years);
-    var com_interest = amount-principal
+    var com_interest = amount-principal;
     var year = new Date().getFullYear()+parseInt(years);
     document.getElementById("result").innerHTML="Compound Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
         "at an interest rate of <mark>" + rate + "</mark>,<br/>" +
